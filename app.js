@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import rootRouter from "./router/index.js";
-import seedMenu from "./router/seedMenu.js";
+import seedMenu from "./router/upload-menu.js";
 import foodRoutes from "./router/foodRoutes.js";
 import OrderEmbeddings from "./router/OrderEmbeddings.js";
 
