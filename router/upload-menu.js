@@ -5,7 +5,10 @@ import axios from "axios";
 const router = express.Router();
 
 async function getEmbedding(text) {
-  const res = await axios.post("http://127.0.0.1:8000/embed", { text });
+  // Use the environment variable if it exists, otherwise default to local
+  const modelUrl = process.env.MODEL_URL || "http://127.0.0.1:8000/embed";
+
+  const res = await axios.post(modelUrl, { text });
   return res.data.embedding;
 }
 
