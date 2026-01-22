@@ -1,19 +1,9 @@
 {
     "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "app.js",
-            "use": "@vercel/node"
+            "source": "/(.*)",
+            "destination": "/app.js"
         }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "app.js"
-        }
-    ],
-    "env": {
-        "MONGO_URI": "production_mongo_uri_placeholder",
-        "PYTHON_API_URL": "production_python_api_url_placeholder"
-    }
+    ]
 }
