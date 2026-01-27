@@ -7,7 +7,7 @@ import seedMenu from "./router/upload-menu.js";
 import foodRoutes from "./router/foodRoutes.js";
 import OrderEmbeddings from "./router/OrderEmbeddings.js";
 
-dotenv.config();
+dotenv.config({ override: false });
 connectDB();
 
 const app = express();
