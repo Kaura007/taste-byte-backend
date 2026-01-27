@@ -14,7 +14,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: ["https://taste-byte-frontend.vercel.app"]
+  origin: ["https://taste-byte-frontend.vercel.app"],
   credentials: true
 }));
 
