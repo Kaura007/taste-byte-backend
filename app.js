@@ -21,7 +21,7 @@ app.use(cors({
     // Allow GitHub Codespaces URLs and production
     if (
       origin.includes('.app.github.dev') || 
-      origin === 'https://taste-byte-frontend.vercel.app' ||
+      origin === 'https://taste-byte-frontend-8n92npqdv-kaura007s-projects.vercel.app' ||
       origin.startsWith('http://localhost')
     ) {
       return callback(null, true);
