@@ -16,7 +16,7 @@
                 },
                 {
                     "key": "Access-Control-Allow-Origin",
-                    "value": "https://taste-byte-frontend-8n92npqdv-kaura007s-projects.vercel.app"
+                    "value": "https://taste-byte-frontend.vercel.app"
                 },
                 {
                     "key": "Access-Control-Allow-Methods",
